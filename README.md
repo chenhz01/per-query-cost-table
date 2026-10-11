@@ -2,6 +2,8 @@
 
 Record every LLM call as one ledger line, aggregate by query type into a markdown cost table you can paste into a README, and breach-alert per-type budgets. Cost transparency as a product feature, not a hidden receipt. If you run an AI feature and cannot currently say what one query *type* costs you, you need this; if you bill per-token in real time through a provider dashboard, you already have it.
 
+<p align="center"><img src="docs/demo.gif" alt="demo" width="720"></p>
+
 ## Problem
 
 AI applications almost universally hide their costs. Users see "AI-powered" and pay indirectly; builders see a monthly invoice with no per-feature breakdown. One open-source personal-finance app took the opposite route and printed its per-query cost table directly in the README — every category of question, every token count, every cent [unverified claim about the specific project — see source link]. That table is the right unit of accounting: not per-model, not per-day, but **per query type**, because that is the granularity at which you decide what to optimize or kill.
